@@ -140,6 +140,7 @@ nav{
 @media screen and (max-width: 576px){
     .banner{
         flex-direction: column-reverse;
+        gap: 0px;
     }
     .banner-content{
         width: auto;
@@ -152,4 +153,16 @@ nav{
     .banner-content p{
         font-size: 0.875rem;
     }
+}
+
+/* main sections styles */
+main{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* curriculum section */
+.curriculum{
+    background-image: url('../assets/bg.png');
+    
 }
