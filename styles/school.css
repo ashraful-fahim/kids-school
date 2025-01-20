@@ -8,10 +8,6 @@
 }
 
 /* Shared Styles */
-/* .bg-main{
-background-color: rgba(30, 30, 30, 1);
-} */
-
 header{
 max-width: 1160px;
 margin: 0 auto;
@@ -93,5 +89,67 @@ nav{
     }
     .school-end img{
         display: block;
+    }
+}
+
+/* banner styles */
+.banner-content{
+    width: 50%;
+}
+
+.banner-content h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.empo{
+    color: #FEA301;
+}
+
+.vision{
+    color: #01ACFD;
+}
+
+.banner-content p{
+    /* width: 75%; */
+    font-weight: 1.25rem;
+}
+
+.btn-banner{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 47px;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+.banner{
+    margin-top: 20px;
+    gap: 120px;
+    align-items:center;
+}
+
+/* Banner Responsive for mobile */
+@media screen and (max-width: 576px){
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .banner-content h1{
+        font-size: 2rem;
+    }
+    .banner-content p{
+        font-size: 0.875rem;
     }
 }
