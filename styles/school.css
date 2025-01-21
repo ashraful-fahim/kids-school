@@ -268,4 +268,10 @@ main{
         padding-top: 40px;
         padding-bottom: 20px;
     }
+    .card-properties{
+        border-radius: 12px;
+        width: 250px;
+        height: 360px;
+        padding: 35px;
+    }
 }
