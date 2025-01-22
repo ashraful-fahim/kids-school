@@ -31,7 +31,6 @@ display: flex;
     font-size: 1rem;
     font-weight: 700;
     border: none;
-    background-color: white;
 }
 
 /* Nav Bar Styles */
@@ -256,6 +255,18 @@ main{
     color: rgba(135, 0, 255, 1);
 }
 
+.arrow{
+    width: 120px;
+    display: flex;
+    gap: 10px;
+    margin-left: 495px;
+    margin-bottom: 50px;
+}
+
+.arrow img{
+    max-width: 100%;
+}
+
 /* Standard Curriculum Section Responsive */
 @media screen and (max-width: 576px){
     .card-container{
@@ -270,8 +281,23 @@ main{
     }
     .card-properties{
         border-radius: 12px;
-        width: 250px;
-        height: 360px;
+        width: 300px;
+        height: 300px;
         padding: 35px;
+    }
+    .curriculum h2{
+        font-size: 1.625rem;
+        font-weight: 700;
+    }
+    .card-title{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .card-description{
+        font-size: 0.64rem;
+        font-weight: 500;
+    }   
+    .arrow{
+        display: none;
     }
 }
