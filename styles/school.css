@@ -34,6 +34,12 @@ display: flex;
     background-color: white;
 }
 
+footer{
+    background-color: #01ACFD;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 /* Nav Bar Styles */
 .nav-container{
     display: flex;
@@ -318,8 +324,8 @@ display: flex;
 /* Our-Stories section related styles */
 
 .our-stories{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(254, 163, 1, 0.2)), 
-    url('/assets/bg.png');
+    background-image: url('/assets/bg.png');
+    background-color: linear-gradient(to top, #fbf0d9 20%, white 80%);
     background-repeat: no-repeat;
     background-image: contain;
 }
@@ -459,39 +465,50 @@ display: flex;
 
 /* Our Stories Section - Responsive */
 @media screen and (max-width: 576px) {
-    /* .our-stories-container{
-        margin: 0 auto;
-    } */
-    .story-card-1{
-        display: none;
-    }
-    .story-card-2{
-        max-width: 300px;
-        margin: 5px auto;
-    }
-    .story-card-2 img{
-        max-width: 100%;
-    }
-    .our-stories-container h2{
-        font-size: 1.625rem;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-    .btn-story-2, .btn-story-4{
-        border-radius: 28px;
-        padding: 5px 8px;
-        color: white;
-        font-size: 0.6rem;
-        font-weight: 500;
-        position: absolute;
-        left: 25px;
-        top: 115px;
-    }
-    .story-card-title{
-        font-size: 0.6rem;
-        font-weight: 700;
-        line-height: 15pt;
-        text-align: left;
-        padding: 1.25rem 2rem;
-    }
+/* .our-stories-container{
+    margin: 0 auto;
+} */
+.story-card-1{
+    display: none;
+}
+.story-card-2{
+    max-width: 300px;
+    margin: 5px auto;
+}
+.story-card-2 img{
+    max-width: 100%;
+}
+.mini-story-cards{
+    grid-template-columns: repeat(2, 1fr);
+}
+.our-stories-container h2{
+font-size: 1.625rem;
+padding-top: 40px;
+padding-bottom: 20px;
+}
+.btn-story-2, .btn-story-4{
+    border-radius: 28px;
+    padding: 5px 8px;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 500;
+    position: absolute;
+    left: 25px;
+    top: 115px;
+}
+.story-card-title{
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 15pt;
+    text-align: left;
+    padding: 1.25rem 2rem;
+}
+}
+
+
+/* footer styles */
+.footer-title{
+    justify-content:start;
+    align-items:center;
+
 }
