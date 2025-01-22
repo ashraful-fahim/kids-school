@@ -31,6 +31,7 @@ display: flex;
     font-size: 1rem;
     font-weight: 700;
     border: none;
+    background-color: white;
 }
 
 /* Nav Bar Styles */
@@ -184,14 +185,21 @@ display: flex;
 }
 
 /* main sections styles */
-main{
-    max-width: 1160px;
-    margin: 0 auto;
-}
+/* main{
+    background-image: url('/assets/bg.png');
+    background-size: auto;
+} */
 
 /* curriculum section */
 .curriculum{
     background-image: url('/assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.curriculum-container{
+    max-width: 1160px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -209,7 +217,7 @@ main{
 .card-properties{
     border-radius: 18px;
     width: 250px;
-    height: 400px;
+    height: 360px;
     justify-items: center;
     text-align: center;
     padding: 45px;
@@ -217,17 +225,17 @@ main{
 
 .card-1{
     border: 1px solid rgba(222, 245, 255, 1);
-    background-image: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
+    background: linear-gradient(#DEF5FF,#FFFFFF 40%);
 }
 
 .card-2{
     border: 1px solid rgba(255, 244, 220, 1);
-    background-image: linear-gradient(rgba(255, 244, 220, 1),rgba(255, 255, 255, 0));
+    background-image: linear-gradient(#FFF4DC,#FFFFFF 40%);
 }
 
 .card-3{
     border: 1px solid rgba(242, 232, 255, 1);
-    background-image: linear-gradient(rgba(238, 225, 255, 1),rgba(255, 255, 255, 0));
+    background-image: linear-gradient(#F2E8FF,#FFFFFF 40%);
 }
 
 .card-title{
@@ -259,7 +267,8 @@ main{
     width: 120px;
     display: flex;
     gap: 10px;
-    margin-left: 495px;
+    margin-top: 50px;
+    margin-left: 520px;
     margin-bottom: 50px;
 }
 
@@ -269,6 +278,10 @@ main{
 
 /* Standard Curriculum Section Responsive */
 @media screen and (max-width: 576px){
+    .curriculum-container{
+        max-width: 576px;
+        margin: 0 auto;
+    }
     .card-container{
         grid-template-columns: 1fr;
         gap: 10px;
@@ -299,5 +312,189 @@ main{
     }   
     .arrow{
         display: none;
+    }
+}
+
+/* Our-Stories section related styles */
+
+.our-stories{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(254, 163, 1, 0.2)), 
+    url('/assets/bg.png');
+    background-repeat: no-repeat;
+    background-image: contain;
+}
+
+.our-stories-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.story-cards{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+.our-stories h2{
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+
+.story-card-1{
+    max-width: 33.76rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.story-image-1{
+    position: relative;
+}
+.story-image-1 img{
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.story-text-1{
+    /* width: 540px; */
+    border: 1px solid white;
+    background-color: white;
+    text-align:start;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.story-text-1 h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-left: 3rem;
+}
+
+.story-text-1 p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+    padding: 10px 45px 45px;
+    line-height: 25pt;
+}
+
+.btn-story-1{
+    border: 1px solid #3CD8E8;
+    background-color:#3CD8E8 ;
+    border-radius: 45px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 18px;
+    position: absolute;
+    left: 35px;
+    top: 310px;
+}
+
+/* mini story cards styles */
+.mini-story-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.story-card-2{
+    max-width: 290px;
+    /* min-height: 300px; */
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+.story-card-2 img{
+    max-width: 100%;
+}
+
+.story-card-title{
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 20pt;
+    text-align: left;
+    padding: 1.25rem 2rem;
+}
+
+.btn-story-2{
+    border: 1px solid #95B226;
+    background-color: #95B226;
+    border-radius: 45px;
+    padding: 10px 18px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 25px;
+    top: 155px;
+}
+
+.story-image-2 img{
+    /* max-width: 100%; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.btn-story-4{
+    border: 1px solid #5D58F0;
+    background-color: #5D58F0;
+    border-radius: 45px;
+    padding: 10px 18px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 25px;
+    top: 162px;
+}
+
+.btn-view-all{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 50px;
+}
+
+/* Our Stories Section - Responsive */
+@media screen and (max-width: 576px) {
+    /* .our-stories-container{
+        margin: 0 auto;
+    } */
+    .story-card-1{
+        display: none;
+    }
+    .story-card-2{
+        max-width: 300px;
+        margin: 5px auto;
+    }
+    .story-card-2 img{
+        max-width: 100%;
+    }
+    .our-stories-container h2{
+        font-size: 1.625rem;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .btn-story-2, .btn-story-4{
+        border-radius: 28px;
+        padding: 5px 8px;
+        color: white;
+        font-size: 0.6rem;
+        font-weight: 500;
+        position: absolute;
+        left: 25px;
+        top: 155px;
+    }
+    .story-card-title{
+        font-size: 0.6rem;
+        font-weight: 700;
+        line-height: 15pt;
+        text-align: left;
+        padding: 1.25rem 2rem;
     }
 }
