@@ -322,13 +322,13 @@ display: flex;
     url('/assets/bg.png');
     background-repeat: no-repeat;
     background-image: contain;
+    border: 2px solid red;
 }
 
 .our-stories-container{
     max-width: 1160px;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid red;
 }
 
 .story-cards{
@@ -344,8 +344,6 @@ display: flex;
 
 .story-card-1{
     max-width: 33.76rem;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .story-image-1{
