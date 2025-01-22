@@ -497,7 +497,7 @@ padding-bottom: 20px;
     font-weight: 500;
     position: absolute;
     left: 25px;
-    top: 115px;
+    top: 107px;
 }
 .story-card-title{
     font-size: 0.6rem;
@@ -567,7 +567,21 @@ padding-bottom: 20px;
     .footer-container{
         flex-direction: column;
     }
+    .footer-start p{
+        text-align: justify;
+    }
     .footer-description{
-        max-width: 16rem;
+        max-width: 20rem;
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+    .footer-abt{
+        padding-top: 40px;
+        margin-left: 15px;
+    }
+    .icono{
+        padding-left: 18px;
+        justify-content:start;
+        gap: 5px;
     }
 }
