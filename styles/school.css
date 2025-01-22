@@ -322,7 +322,6 @@ display: flex;
     url('/assets/bg.png');
     background-repeat: no-repeat;
     background-image: contain;
-    border: 2px solid red;
 }
 
 .our-stories-container{
@@ -486,7 +485,7 @@ display: flex;
         font-weight: 500;
         position: absolute;
         left: 25px;
-        top: 155px;
+        top: 115px;
     }
     .story-card-title{
         font-size: 0.6rem;
