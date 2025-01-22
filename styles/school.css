@@ -197,9 +197,10 @@ footer{
 }
 
 .curriculum{
-    background-image: url('/assets/bg.png');
+    background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 .curriculum-container{
@@ -323,10 +324,12 @@ footer{
 /* Our-Stories section related styles */
 
 .our-stories{
-    background-image: url('/assets/bg.png');
-    background-color: linear-gradient(to top, #fbf0d9 20%, white 80%);
-    background-repeat: no-repeat;
-    background-image: contain;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), white 70%),
+                url('../assets/bg.png') no-repeat center center / cover; 
+
+    /* background-repeat: no-repeat;
+    background-image: cover;
+    background-position: center; */
 }
 
 .our-stories-container{
