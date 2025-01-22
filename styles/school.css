@@ -189,12 +189,13 @@ footer{
 }
 
 /* main sections styles */
-/* main{
-    background-image: url('/assets/bg.png');
-    background-size: auto;
-} */
+.marquee{
+    background-color: #3CD8E8;
+    font-size: 2rem;
+    font-size: 600;
+    color: white;
+}
 
-/* curriculum section */
 .curriculum{
     background-image: url('/assets/bg.png');
     background-repeat: no-repeat;
